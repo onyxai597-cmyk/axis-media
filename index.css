@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 img {
   border-radius: 100%;
 }
