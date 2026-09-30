@@ -101,7 +101,31 @@
 </section>
 <hr>
 <section id="contact">
-    </section>
+  <div class="contact-wrapper">
+    <div class="contact-head">
+      <h2>تواصل معنا مباشرة</h2>
+      <p>املأ البيانات وسيتم تحويلك لواتساب تلقائيا</p>
+    </div>
+
+    <form id="whatsappForm" class="whatsapp-form">
+      <div class="form-row">
+        <input type="text" id="name" placeholder="اسمك" required>
+        <input type="tel" id="phone" placeholder="رقمك" required>
+      </div>
+      <input type="text" id="business" placeholder="نوع نشاطك التجاري" required>
+      <select id="service" required>
+        <option value="" disabled selected>اختر الخدمة</option>
+        <option value="إعلانات ممولة">إعلانات ممولة</option>
+        <option value="تصميم موقع أو متجر">تصميم موقع أو متجر</option>
+        <option value="تصميم وهوية بصرية">تصميم وهوية بصرية</option>
+        <option value="مونتاج وفيديو AI">مونتاج وفيديو AI</option>
+        <option value="باقة متكاملة">باقة متكاملة</option>
+      </select>
+      <textarea id="message" placeholder="تفاصيل مشروعك" rows="4" required></textarea>
+      <button type="submit" class="wa-btn">إرسال عبر واتساب</button>
+    </form>
+  </div>
+</section>
 <hr>
   </main>
 
