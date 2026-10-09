@@ -1,29 +1,58 @@
-let lastSubmit = 0;
+const WHATSAPP_NUMBER = "201155937921";
 
-document.getElementById('whatsappForm').addEventListener('submit', function(e) {
-  e.preventDefault();
+const form = document.getElementById("contact-form");
 
-  let now = Date.now();
-  if (now - lastSubmit < 10000) {
-    alert('استنى 10 ثواني قبل ما تبعت تاني');
-    return;
-  }
-  lastSubmit = now;
+if (form) {
+const getValue = (data, name) =>
+String(data.get(name) || "").trim();
 
-  let name = document.getElementById('name').value.trim();
-  let phone = document.getElementById('phone').value.trim();
-  let business = document.getElementById('business').value.trim();
-  let service = document.getElementById('service').value;
-  let message = document.getElementById('message').value.trim();
+form.addEventListener("submit", (event) => {
+event.preventDefault();
 
-  if (message.length < 10) {
-    alert('اكتب تفاصيل اكتر شوية');
-    return;
-  }
+const data = new FormData(form);
 
-  let text = `مرحبا Axis Media 👋%0A%0A*الاسم:* ${name}%0A*الرقم:* ${phone}%0A*النشاط:* ${business}%0A*الخدمة المطلوبة:* ${service}%0A*التفاصيل:* ${message}`;
-  let number = "201155937921";
-  let url = `https://wa.me/${number}?text=${text}`;
+const lines = [
+  "طلب تواصل جديد من موقع Axis Media",
+  "",
+  "البيانات الشخصية",
+  "الاسم: " + getValue(data, "name"),
+  "رقم الموبايل: " + getValue(data, "phone")
+];
 
-  window.open(url, '_blank');
+const email = getValue(data, "email");
+
+if (email) {
+  lines.push("البريد الإلكتروني: " + email);
+}
+
+lines.push(
+  "",
+  "بيانات العمل",
+  "الشركة / النشاط: " + getValue(data, "company"),
+  "الخدمة المطلوبة: " + getValue(data, "service")
+);
+
+const website = getValue(data, "website");
+
+if (website) {
+  lines.push("الموقع / الصفحة: " + website);
+}
+
+lines.push(
+  "",
+  "تفاصيل المشروع:",
+  getValue(data, "message")
+);
+
+const url =
+  "https://wa.me/" +
+  WHATSAPP_NUMBER +
+  "?text=" +
+  encodeURIComponent(lines.join("\n"));
+
+window.location.href = url;
+
 });
+} else {
+console.error('لم يتم العثور على الفورم بالمعرف "contact-form".');
+}
