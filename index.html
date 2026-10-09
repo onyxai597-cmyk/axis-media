@@ -4,138 +4,255 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Axis Media | محور نموك الرقمي</title>
-<link rel="icon" type="image/png" href="logo.png">
-<link rel="apple-touch-icon" href="logo.png">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
   <meta name="description" content="Axis Media - We build brands that dominate in Egypt and the Gulf. Paid Ads, Social Management, Branding & Web Development.">
   <meta name="keywords" content="Axis Media, تسويق الكتروني, اعلانات ممولة, تصميم مواقع, سوشيال ميديا, مصر, الخليج">
   <meta name="author" content="Ahmed Birgas">
   <meta property="og:title" content="Axis Media | محور نموك الرقمي">
-<meta property="og:description" content="We don't just run ads. We build brands that dominate.">
-<meta property="og:image" content="https://axis-media-fawn.vercel.app/logo.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:secure_url" content="https://axis-media-fawn.vercel.app/logo.png">
-<meta property="og:url" content="https://axis-media-fawn.vercel.app/">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://axis-media-fawn.vercel.app/logo.png">
-<link rel="stylesheet" href="index.css">
+  <meta property="og:description" content="We don't just run ads. We build brands that dominate.">
+  <meta property="og:image" content="https://axis-media-fawn.vercel.app/logo.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:secure_url" content="https://axis-media-fawn.vercel.app/logo.png">
+  <meta property="og:url" content="https://axis-media-fawn.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://axis-media-fawn.vercel.app/logo.png">
+  <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body class="tajawal-regular">
 
-  <header>
-    <nav>
-      <img src="logo.png" alt="Axis logo" width="50" height="50">
-      <span>Axis Media</span>
-      <input type="checkbox" id="toggle-menu">
-      <label for="toggle-menu" class="hamburger">&#9776;</label>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#services">services</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <header class="header">
+    <nav class="header__nav">
+      <a href="#home" class="header__brand">
+        <img src="logo.png" alt="Axis Media Logo" class="header__logo">
+        <span class="header__name tajawal-bold">Axis Media</span>
+      </a>
+      <input type="checkbox" id="toggle-menu" class="header__toggle">
+      <label for="toggle-menu" class="header__burger">&#9776;</label>
+      <ul class="header__menu">
+        <li><a href="#home" class="header__link tajawal-medium">الرئيسية</a></li>
+        <li><a href="#services" class="header__link tajawal-medium">خدماتنا</a></li>
+        <li><a href="#work" class="header__link tajawal-medium">أعمالنا</a></li>
+        <li><a href="#about" class="header__link tajawal-medium">من نحن</a></li>
+        <li><a href="#contact" class="header__link tajawal-medium">تواصل معنا</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section id="home">
-  <div class="home-content">
-    <h1>نحن فريق يعشق الأرقام.<br><span>لا الشعارات الإنشائية.</span></h1>
-    <p>نحن Axis Media، فريق مستقل متخصص في التسويق الرقمي والبرمجة. نساعد العلامات التجارية الناشئة والمتوسطة في مصر والخليج على النمو الحقيقي من خلال إعلانات تبيع، ومواقع تحول الزائر إلى عميل، وهوية بصرية تثبت في الأذهان.</p>
-    <div class="home-buttons">
-      <a href="#contact" class="btn-primary">تواصل معنا</a>
-      <a href="#work" class="btn-secondary">شاهد أعمالنا</a>
-    </div>
-  </div>
-</section>
-<hr>
- <section id="work">
-<span class="badge">Freelancer Team - أعمالنا تتحدث عنا</span>
-    </section>
-<hr>
+  <main class="main">
+    <section id="home" class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          نحن لا نبيع الوعود.<br>
+          <span class="hero__accent">نحن نبني أرقاماً تتحدث عن نفسها.</span>
+        </h1>
 
-    <section id="services">
-  <div class="section-header">
-    <h2>ماذا نقدم لك</h2>
-    <p>خدمات متكاملة تجمع بين التسويق والبرمجة لنمو حقيقي</p>
-  </div>
+        <p class="hero__text">
+          Axis Media وكالة رقمية متكاملة تدمج بين ذكاء التسويق وقوة البرمجة. نساعد العلامات التجارية في مصر والخليج على تحقيق نمو مجدٍ عبر إعلانات عالية التحويل، ومواقع إلكترونية سريعة، وهويات بصرية راسخة.
+        </p>
 
-  <div class="services-grid">
-    <div class="service-card">
-      <div class="service-icon">📈</div>
-      <h3>إدارة الحملات الإعلانية</h3>
-      <p>إدارة احترافية لإعلانات فيسبوك وانستجرام وجوجل باستهداف دقيق يحقق أعلى عائد على الاستثمار</p>
-    </div>
-
-    <div class="service-card">
-      <div class="service-icon">💻</div>
-      <h3>برمجة المواقع والمتاجر</h3>
-      <p>تصميم وبرمجة مواقع ومتاجر إلكترونية سريعة ومتجاوبة تحول الزائر إلى عميل فعلي</p>
-    </div>
-
-    <div class="service-card">
-      <div class="service-icon">🎨</div>
-      <h3>التصميم والهوية البصرية</h3>
-      <p>تصاميم سوشيال ميديا وهويات بصرية كاملة بأفكار إبداعية مدعومة بالذكاء الاصطناعي</p>
-    </div>
-
-    <div class="service-card">
-      <div class="service-icon">🎬</div>
-      <h3>المونتاج وفيديوهات AI</h3>
-      <p>مونتاج احترافي للريلز والإعلانات وإنتاج فيديوهات بالذكاء الاصطناعي بجودة سينمائية</p>
-    </div>
-
-    <div class="service-card">
-      <div class="service-icon">✍️</div>
-      <h3>كتابة المحتوى والتسويق</h3>
-      <p>محتوى تسويقي يبيع واستراتيجية محتوى شهرية تبني الثقة وتزيد التفاعل والمبيعات</p>
-    </div>
-
-    <div class="service-card">
-      <div class="service-icon">🚀</div>
-      <h3>تحسين محركات البحث</h3>
-      <p>تهيئة موقعك لمحركات البحث وزيادة الظهور المجاني وجلب عملاء مهتمين بشكل مستمر</p>
-    </div>
-  </div>
-</section>
-<hr>
-<section id="contact">
-  <div class="contact-wrapper">
-    <div class="contact-head">
-      <h2>تواصل معنا مباشرة</h2>
-      <p>املأ البيانات وسيتم تحويلك لواتساب تلقائيا</p>
-    </div>
-
-    <form id="whatsappForm" class="whatsapp-form">
-      <div class="form-row">
-        <input type="text" id="name" placeholder="اسمك" required>
-        <input type="tel" id="phone" placeholder="رقمك" required>
+        <div class="hero__actions">
+          <a href="#contact" class="hero__btn hero__btn--primary tajawal-bold">احجز استشارة مجانية</a>
+          <a href="#work" class="hero__btn hero__btn--outline tajawal-bold">استكشف أعمالنا</a>
+        </div>
       </div>
-      <input type="text" id="business" placeholder="نوع نشاطك التجاري" required>
-      <select id="service" required>
-        <option value="" disabled selected>اختر الخدمة</option>
-        <option value="إعلانات ممولة">إعلانات ممولة</option>
-        <option value="تصميم موقع أو متجر">تصميم موقع أو متجر</option>
-        <option value="تصميم وهوية بصرية">تصميم وهوية بصرية</option>
-        <option value="مونتاج وفيديو AI">مونتاج وفيديو AI</option>
-        <option value="باقة متكاملة">باقة متكاملة</option>
-      </select>
-      <textarea id="message" placeholder="تفاصيل مشروعك" rows="4" required></textarea>
-      <button type="submit" class="wa-btn">إرسال عبر واتساب</button>
-    </form>
-  </div>
-</section>
-<hr>
+    </section>
+
+    <section id="services" class="services">
+      <div class="services__header">
+        <h2 class="services__title">حلولنا الاستراتيجية</h2>
+        <p class="services__subtitle">خدمات متكاملة تدمج بين ذكاء التسويق ودقة البرمجة لمضاعفة نمو أرباحك</p>
+      </div>
+
+      <div class="services__grid">
+        <div class="services__card">
+          <div class="services__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+          </div>
+          <h3 class="services__card-title tajawal-bold">إدارة الحملات الإعلانية</h3>
+          <p class="services__card-text">إدارة وتوجيه الحملات الإعلانية على مختلف المنصات بتكتيكات قائمة على البيانات لضمان أعلى عائد استثمار (ROAS).</p>
+        </div>
+
+        <div class="services__card">
+          <div class="services__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </div>
+          <h3 class="services__card-title tajawal-bold">برمجة وتطوير المواقع</h3>
+          <p class="services__card-text">بناء منصات ومتاجر إلكترونية فائقة السرعة، مجهزة تقنياً لتحويل الزوار إلى عملاء دائمين.</p>
+        </div>
+
+        <div class="services__card">
+          <div class="services__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+          </div>
+          <h3 class="services__card-title tajawal-bold">الهوية البصرية والـ UX</h3>
+          <p class="services__card-text">تطوير هويات بصرية استثنائية وتصاميم واجهات مستخدم تعزز مكانة علامتك التجارية وتثبت في الأذهان.</p>
+        </div>
+
+        <div class="services__card">
+          <div class="services__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>
+          </div>
+          <h3 class="services__card-title tajawal-bold">إنتاج الفيديو وميديا AI</h3>
+          <p class="services__card-text">صناعة ومونتاج مقاطع فيديو سينمائية وإعلانات مدعومة بأحدث تقنيات الذكاء الاصطناعي لزيادة التفاعل.</p>
+        </div>
+
+        <div class="services__card">
+          <div class="services__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+          </div>
+          <h3 class="services__card-title tajawal-bold">كتابة المحتوى التسويقي</h3>
+          <p class="services__card-text">صياغة نصوص إعلانية واستراتيجيات محتوى موجهة لإقناع العميل وتحفيزه على اتخاذ قرار الشراء.</p>
+        </div>
+
+        <div class="services__card">
+          <div class="services__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </div>
+          <h3 class="services__card-title tajawal-bold">تحسين محركات البحث (SEO)</h3>
+          <p class="services__card-text">تهيئة شاملة لموقعك للتصدر في نتائج البحث الأولى وجلب زوار مهتمين بخدماتك بشكل عضوي مستمر.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+    </section>
+
+    <section id="about">
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact__header">
+        <h2 class="contact__title">ابدأ مشروعك معنا</h2>
+        <p class="contact__subtitle">املأ النموذج وسيتواصل معك فريقنا في أقرب وقت لمناقشة مشروعك واقتراح الحل الأنسب.</p>
+      </div>
+
+      <form id="contact-form" class="contact__form">
+        <fieldset class="contact__fieldset">
+          <legend class="contact__legend tajawal-bold">البيانات الشخصية</legend>
+
+          <div class="contact__field">
+            <label for="contact-name" class="contact__label">الاسم الكامل</label>
+            <input type="text" id="contact-name" name="name" class="contact__input" autocomplete="name" placeholder="اكتب اسمك" required>
+          </div>
+
+          <div class="contact__field">
+            <label for="contact-phone" class="contact__label">رقم الموبايل</label>
+            <input type="tel" id="contact-phone" name="phone" class="contact__input" dir="ltr" inputmode="tel" autocomplete="tel" placeholder="01XXXXXXXXX" required>
+          </div>
+
+          <div class="contact__field contact__field--full">
+            <label for="contact-email" class="contact__label">البريد الإلكتروني (اختياري)</label>
+            <input type="email" id="contact-email" name="email" class="contact__input" dir="ltr" autocomplete="email" placeholder="name@example.com">
+          </div>
+        </fieldset>
+
+        <fieldset class="contact__fieldset">
+          <legend class="contact__legend tajawal-bold">بيانات العمل</legend>
+
+          <div class="contact__field">
+            <label for="contact-company" class="contact__label">اسم الشركة أو النشاط</label>
+            <input type="text" id="contact-company" name="company" class="contact__input" autocomplete="organization" placeholder="اسم شركتك أو علامتك التجارية" required>
+          </div>
+
+          <div class="contact__field">
+            <label for="contact-service" class="contact__label">الخدمة المطلوبة</label>
+            <select id="contact-service" name="service" class="contact__input contact__select" required>
+              <option value="" disabled selected>اختر الخدمة</option>
+              <option value="إدارة الحملات الإعلانية">إدارة الحملات الإعلانية</option>
+              <option value="برمجة وتطوير المواقع">برمجة وتطوير المواقع</option>
+              <option value="الهوية البصرية والـ UX">الهوية البصرية والـ UX</option>
+              <option value="إنتاج الفيديو وميديا AI">إنتاج الفيديو وميديا AI</option>
+              <option value="كتابة المحتوى التسويقي">كتابة المحتوى التسويقي</option>
+              <option value="تحسين محركات البحث (SEO)">تحسين محركات البحث (SEO)</option>
+              <option value="خدمة أخرى">خدمة أخرى</option>
+            </select>
+          </div>
+
+          <div class="contact__field contact__field--full">
+            <label for="contact-website" class="contact__label">رابط الموقع أو الصفحة (اختياري)</label>
+            <input type="url" id="contact-website" name="website" class="contact__input" dir="ltr" autocomplete="url" placeholder="https://">
+          </div>
+
+          <div class="contact__field contact__field--full">
+            <label for="contact-message" class="contact__label">تفاصيل مشروعك</label>
+            <textarea id="contact-message" name="message" class="contact__input contact__textarea" rows="5" placeholder="اكتب لنا عن مشروعك وأهدافك" required></textarea>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="contact__btn tajawal-bold">أرسل عبر واتساب</button>
+        <p class="contact__note">سيتم فتح واتساب مع رسالتك جاهزة للإرسال.</p>
+      </form>
+    </section>
   </main>
 
-    <footer>
-    <div class="footer-content">
-      <p>&copy; 2026 Axis Media - جميع الحقوق محفوظة</p>
-      <p>Designed & Developed By Ahmed Birgas</p>
+  <footer class="footer">
+    <div class="footer__container">
+
+      <div class="footer__brand">
+        <a href="#home" class="footer__logo">
+          <img src="logo.png" alt="Axis Media Logo" class="footer__logo-img">
+          <span class="footer__logo-text">Axis Media</span>
+        </a>
+        <p class="footer__description">
+          وكالة رقمية متكاملة تدمج بين ذكاء التسويق وقوة البرمجة لمضاعفة نمو أرباحك.
+        </p>
+      </div>
+
+      <div class="footer__group">
+        <h3 class="footer__title tajawal-bold">روابط سريعة</h3>
+        <ul class="footer__list">
+          <li><a href="#home" class="footer__link">الرئيسية</a></li>
+          <li><a href="#services" class="footer__link">خدماتنا</a></li>
+          <li><a href="#work" class="footer__link">أعمالنا</a></li>
+          <li><a href="#about" class="footer__link">من نحن</a></li>
+          <li><a href="#contact" class="footer__link">تواصل معنا</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__group">
+        <h3 class="footer__title tajawal-bold">خدماتنا</h3>
+        <ul class="footer__list">
+          <li><a href="#services" class="footer__link">برمجة وتطوير المواقع</a></li>
+          <li><a href="#services" class="footer__link">الإعلانات الممولة</a></li>
+          <li><a href="#services" class="footer__link">إدارة منصات التواصل</a></li>
+          <li><a href="#services" class="footer__link">تصميم الهوية البصرية</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__group">
+        <h3 class="footer__title tajawal-bold">تواصل معنا</h3>
+        <p class="footer__info">مصر والخليج</p>
+
+        <div class="footer__socials">
+          <a href="https://www.facebook.com/share/1GipjRVeQr/" target="_blank" rel="noopener" class="footer__social" aria-label="فيسبوك">
+            <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/>
+            </svg>
+          </a>
+
+          <a href="mailto:" class="footer__social" aria-label="البريد الإلكتروني">
+            <svg class="footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="m22 7-10 6L2 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">&copy; 2026 Axis Media. جميع الحقوق محفوظة.</p>
+      <p class="footer__copyright">
+        Designed and developed by Ahmed Birgas
+      </p>
     </div>
   </footer>
- 
+
   <script src="index.js"></script>
+
 </body>
 </html>
